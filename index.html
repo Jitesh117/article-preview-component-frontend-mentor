@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <script src="script.js">
+      function hide() {
+    let hide = document.getElementsByClassName("shareit");
+    hide.classList.toggle("hide")
+}
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    </script>
+  <link rel="icon" type="im age/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Article preview component</title>
 
@@ -17,27 +23,46 @@
 <body>
   
   <main class="container">
-    <section>
+    <section class="main">
       <img class="drawer" src="./images/drawers.jpg" alt="picture of a drawer">
-      <h1>
-        Shift the overall look and feel by adding these wonderful 
-        touches to furniture in your home
-      </h1>
-      <span>
-        Ever been in a room and felt like something was missing? Perhaps 
-        it felt slightly bare and uninviting. I’ve got some simple tips 
-        to help you make any room feel complete.
-      </span>
-    
-      <div class="profile">
-        <img class="pfp" src="./images/avatar-michelle.jpg" alt="">
-        <div class="name">
-          <span> Michelle Appleton</span>
-          <span>28 Jun 2020</span>
+      <div class="text">
+        <h1>
+          Shift the overall look and feel by adding these wonderful 
+          touches to furniture in your home
+        </h1>
+        <span class="para">
+          Ever been in a room and felt like something was missing? Perhaps 
+          it felt slightly bare and uninviting. I’ve got some simple tips 
+          to help you make any room feel complete.
+        </span>
+      
+        <div class="profile">
+          <img class="pfp" src="./images/avatar-michelle.jpg" alt="">
+          <div class="name">
+            <span> Michelle Appleton</span>
+            <br>
+            <span style="color: hsl(214, 17%, 51%);">28 Jun 2020</span>
+          </div>
+         <div class="shareit" onclick="hide()">
+           <img src="./images/icon-share.svg" alt="" class="">
+         </div>
         </div>
-    
-      <button><img src="./images/icon-share.svg" alt=""></button>
+         
+        
       </div>
+      <div class="profile-alt">
+        <div class="share-icons">
+          <span style="color: hsl(214, 17%, 51%); font-size: 14px; align-self: center;">SHARE</span>
+          <a href="#"><img src="./images/icon-facebook.svg" alt="" class="share"></a>
+          <a href="#"> <img src="./images/icon-twitter.svg" alt="" class="share"></a>
+          <a href="#"><img src="./images/icon-pinterest.svg" alt="" class="share"></a>
+        </div>
+        <div class="unshare" onclick="unhide()">
+          <img src="./images/icon-share.svg" alt="">
+        </div>
+
+    </div>
+
     </section>
     
   </main>

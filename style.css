@@ -1,41 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Manrope:wght@500;700&family=Spartan:wght@700&display=swap');
+
 *{
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 body{
-    margin: 0;
+    margin:0;
     padding: 0;
-
+    background-color: hsl(212, 23%, 69%);
+    font-family: 'kumbh sans',sans-serif;
+    height: 100vh;
 }
-.container{
+.main{
+    background-color: white;
     display: flex;
     justify-content: center;
-    background-color: hsl(210, 46%, 95%);
 }
-section{
-    width: 70%;
-    background-color: white;
-    margin: 80px auto;
-    border-radius: 10px;
-    display: flex;
+h1{
+    color: hsl(217, 19%, 35%);
+    font-size: 20px;
+    
 }
-.drawer{
-    width: 40%;
-    border-radius: 10px 0 0 10px;
-}
+button{
+    border: none;
 
-/* mobile layout */
-@media screen and(max-width:373px) {
-    section{
-        width: 90%;
-        background-color: white;
-        margin: 80px 15%;
-        border-radius: 10px;
+    border-radius: 50%;
+}
+.share{
+
+}
+/* mobile design */
+@media screen and (max-width:375px) {
+    
+    .main{
         display: flex;
         flex-direction: column;
+        width: 90%;
+        margin: 50px auto;
+        background-color: white;
+        border-radius: 10px;
     }
+    /* drawer picture */
     .drawer{
-        border-radius: 10px 10px 0 0;
         width: 100%;
+        border-radius: 10px 10px 0 0 ;
+        
+    }
+    .text{
+        padding: 10px 25px;
+    }
+    .para{
+        color: hsl(214, 17%, 51%);
+    }
+    /* profile segment */
+    .profile{
+        display: flex;
+        padding: 20px 0;
+        justify-content: space-around;
+        
+    }
+    .pfp{
+        width: 20%;
+        height: 20%;
+        border-radius: 50%;
     }
     
+    .name{
+        font-size: 14px;
+
+    }
+    .profile-alt{
+        background-color: hsl(217, 19%, 35%);
+        display: flex;
+        justify-content: space-around;
+        padding:10px 0 ;
+        border-radius: 0 0 10px 10px;
+        align-items: center;
+    }
+    .share-icons{
+        display: flex;
+        padding: 10px 25px;
+        justify-content: space-bet;
+       
+    }
+    .share{
+        width: 20px;
+        height: 20px;
+        padding: 0 5px;
+    }
+    .unshare{
+        padding-right: 20px;
+        border-radius: 50%;
+    }
+    .hide{
+        visibility: hidden;
+    }
 }

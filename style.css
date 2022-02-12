@@ -29,7 +29,7 @@ button{
 
 }
 /* mobile design */
-@media screen and (max-width:375px) {
+@media screen and (max-width:400px) {
     
     .main{
         display: flex;

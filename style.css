@@ -38,6 +38,7 @@ button{
         margin: 50px auto;
         background-color: white;
         border-radius: 10px;
+        
     }
     /* drawer picture */
     .drawer{
@@ -101,7 +102,7 @@ button{
     body{
         margin:0;
         padding: 0;
-        background-color: hsl(210, 46%, 95%)
+        background-color: hsl(210, 46%, 95%);
         font-family: 'kumbh sans',sans-serif;
         height: 100vh;
     }
@@ -109,6 +110,7 @@ button{
         width: 700px;
         margin: 120px auto;
         border-radius: 10px;
+        /* align-self: center; */
         /* margin-left: auto; */
     }
     .drawer{

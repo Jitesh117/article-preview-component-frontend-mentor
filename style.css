@@ -129,15 +129,38 @@ button{
         border-radius: 50%;
     }
     .profile-alt{
-        background-color: hsl(217, 19%, 35%);
         display: none;
-        justify-content: space-around;
-        padding:15px 0 ;
-        border-radius: 0 0 10px 10px;
-        align-items: center;
-        flex-direction: row;
     }
     .text{
         padding: 0 20px;
     }
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        
+      }
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 200px;
+        background-color: hsl(217, 19%, 35%);
+        opacity: 90%;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+        left: -100px;
+        top: -150%;
+        display: flex;
+        justify-content: space-around;
+       
+        /* Position the tooltip text - */
+        position: absolute;
+        z-index: 1;
+      }
+      
+      /* Show the tooltip text when you mouse over the tooltip container */
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+      }
+      
 }

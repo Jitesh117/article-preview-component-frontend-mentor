@@ -32,7 +32,7 @@
           to help you make any room feel complete.
         </span>
       
-        <div class="profile" id="profile">
+        <div class="profile " id="profile">
           <img class="pfp" src="./images/avatar-michelle.jpg" alt="">
           <div class="name">
             <span> Michelle Appleton</span>
@@ -40,13 +40,27 @@
             <span style="color: hsl(214, 17%, 51%);">28 Jun 2020</span>
           </div>
          <div   onclick="hide()">
-           <img class="shareit" src="./images/icon-share.svg" alt="" class="">
+           <div class="tooltip">
+            <img class="shareit " src="./images/icon-share.svg" alt="" class="">
+            <div class=" tooltiptext">
+              <div class="">
+                <span style="color: hsl(214, 17%, 51%); font-size: 14px; align-self: center;">SHARE</span>
+                <a href="#"><img src="./images/icon-facebook.svg" alt="" class="share"></a>
+                <a href="#"> <img src="./images/icon-twitter.svg" alt="" class="share"></a>
+                <a href="#"><img src="./images/icon-pinterest.svg" alt="" class="share"></a>
+              </div>
+              <!-- <div class="unshare" onclick="unhide()">
+                <img src="./images/icon-share.svg" alt="">
+              </div> -->
+      
+            </div>
+           </div>
          </div>
         </div>
          
          
       </div>
-      <div class="profile-alt" id="profile-alt">
+      <div class="profile-alt tooltiptext" id="profile-alt">
         <div class="share-icons">
           <span style="color: hsl(214, 17%, 51%); font-size: 14px; align-self: center;">SHARE</span>
           <a href="#"><img src="./images/icon-facebook.svg" alt="" class="share"></a>
@@ -57,7 +71,7 @@
           <img src="./images/icon-share.svg" alt="">
         </div>
 
-    </div>
+      </div>
 
     </section>
     

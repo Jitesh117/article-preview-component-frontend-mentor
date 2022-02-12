@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Manrope:wght@500;700&family=Spartan:wght@700&display=swap');
 
 *{
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 body{
     margin:0;
     padding: 0;
-    background-color: hsl(212, 23%, 69%);
+    background-color: hsl(210, 46%, 95%);
     font-family: 'kumbh sans',sans-serif;
     height: 100vh;
 }
@@ -34,7 +34,7 @@ button{
     .main{
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 600px;
         margin: 50px auto;
         background-color: white;
         border-radius: 10px;
@@ -95,5 +95,47 @@ button{
     }
     .hide{
         visibility: hidden;
+    }
+}
+@media screen and (min-width:801px){
+    body{
+        margin:0;
+        padding: 0;
+        background-color: hsl(210, 46%, 95%)
+        font-family: 'kumbh sans',sans-serif;
+        height: 100vh;
+    }
+    .main{
+        width: 700px;
+        margin: 120px auto;
+        border-radius: 10px;
+        /* margin-left: auto; */
+    }
+    .drawer{
+        width: 40%;
+        /* height: 100%; */
+        border-radius: 10px 0 0 10px;
+    }
+    .profile{
+        display: flex;
+        padding-bottom: 10px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .pfp{
+        width: 50px;
+        border-radius: 50%;
+    }
+    .profile-alt{
+        background-color: hsl(217, 19%, 35%);
+        display: none;
+        justify-content: space-around;
+        padding:15px 0 ;
+        border-radius: 0 0 10px 10px;
+        align-items: center;
+        flex-direction: row;
+    }
+    .text{
+        padding: 0 20px;
     }
 }
